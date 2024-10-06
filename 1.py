@@ -53,8 +53,7 @@ class Hospital:
 
     @classmethod
     def comandos(cls):
-        print("Введите команду: ")
-        s = input()
+        s = input("Введите команду: ")
         if s[:10] == 'get status':
             cls.get_status(int(s[10:]))
         elif s[:9] == 'status up':
